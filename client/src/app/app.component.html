@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<ul>
+  <li *ngFor="let user of users">
+    <span *ngIf="user.id">Id: {{user.id}}&nbsp;</span>
+    <span *ngIf="user.userName">User Name: {{user.userName}}&nbsp;</span>
+    <span *ngIf="user.email">Email: {{user.email}}&nbsp;</span>
+    <span *ngIf="user.aboutUser">About User: {{user.aboutUser}}</span>
+  </li>
+</ul>
